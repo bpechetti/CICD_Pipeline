@@ -84,8 +84,11 @@ ssh.connect(host, port, username, pkey=private_key)
 
 # Update the files based on branch
 commands = [
-    f'sudo cp -R /path/to/your/repo/{branch}/* {remote_directory}/',
-    'sudo service nginx restart'
+    f'echo "tilak" | sudo cp -R -S /path/to/your/repo/{branch}/* {remote_directory}/',
+    'echo "tilak" | sudo -S service nginx restart'
+    'echo "tilak" | sudo -S apt update',
+    'echo "tilak" | sudo -S apt install -y nginx',
+    'echo "tilak" | sudo -S service nginx restart'
 ]
 
 for command in commands:
