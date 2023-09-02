@@ -1,4 +1,4 @@
-access_token = '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'
+access_token = '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'
 owner = 'bpechetti'
 repo = 'CICD_Pipeline'
 branch ='main' 
