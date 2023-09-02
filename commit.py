@@ -56,7 +56,7 @@ if latest_commit_hash and latest_commit_hash != previous_commit_hash:
         repo = Repo.clone_from(f'https://github.com/{owner}/{repo}.git', local_repo)
     
 
-    src_path = os.path.join(local_repoom    , 'index.html')  # Update with your local path
+    src_path = os.path.join(local_repo    , 'index.html')  # Update with your local path
     dest_path = '/var/www/html/CICD_Pipeline/index.html'
     remote_ip = '192.168.253.199'
     remote_username = 'kali'
